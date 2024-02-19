@@ -1,7 +1,13 @@
 $primary-pink: pink;
 $primary-pink-secondery: lighten(pink,5%);
 $primary-pink-third: darken(pink ,10%);
+$primary-bg-color-first: grey;
 
 $primary-white: white;
+$primary-font: helvetica, sans-serif, arial;
 
-$primary-font: helvetica, sans-serif, arial
+@mixin size($size) {
+    width: $size;
+    height: $size;
+  
+  }
