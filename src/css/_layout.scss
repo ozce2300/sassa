@@ -2,12 +2,19 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: base.$primary-font;
+}
+
+h1 { color: base.$primary-pink;
+
 }
 
 /* Design av Header */
 header {
-    height: 80px;
-    background-color: base.$primary-blue;
+    height: 72px;
+    background-color: base.$primary-pink;
     margin: 0;
     position: relative;
     padding: 0 1em;
@@ -16,8 +23,22 @@ header {
     align-items: center;
 }
 
+footer {
+grid-area: footer;
+background-color: base.$primary-pink-third;
+color: base.$primary-white;
+text-align: center;
+font-size: 1.5rem;
+width: 100%;
+height: 100%;
+min-height: 20vh;
+margin: 0 auto;
+padding-top: 10vh;
+margin-top: 40px;
+}
+
 .logo a {
-    color: rgb(255, 255, 255);
+    color: base.$primary-white;
     font-size: 0.8em;
     margin: 0;
     text-decoration: none;
@@ -25,7 +46,7 @@ header {
 
 /* Design av meny för mobilenheter, placeras till höger om skärmen */
 nav {
-    background-color: base.$primary-blue;
+    background-color: base.$primary-pink;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -49,13 +70,13 @@ nav {
     }
 
     a   {
-    color: white;
+    color: base.$primary-white ;
     text-decoration: none;
     padding: 0 1em;
     } 
 
     li:hover {
-    background-color: base.$primary-blue-secondery;
+    background-color: base.$primary-pink-secondery;
     cursor: pointer;
     }
 }
@@ -65,7 +86,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: base.$primary-blue;
+    background-color: base.$primary-pink;
     border: white solid 2px;
     cursor: pointer;
 }
@@ -75,7 +96,7 @@ nav {
 }
 
 .menu-btn:hover {
-    background-color: base.$primary-blue-secondery;
+    background-color: base.$primary-pink-secondery;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -88,13 +109,13 @@ nav {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: base.$primary-white;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: white;
+    color: base.$primary-white;
 }
 
 /* Meny knapp, stäng */
@@ -121,7 +142,7 @@ nav {
 
 /* Main content */
 main {
-    max-width: 800px;
+    max-width: 600px;
     width: 80%;
     margin: 0 auto;
     font-size: 1.2em;
@@ -132,10 +153,21 @@ h2 {
 }
 
 main p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.4em;
 }
 
+.bilder {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    row-gap: 40px;
+    margin-top: 40px;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
 /* Media querys */
 
@@ -172,5 +204,20 @@ main p {
         display: inline;
         padding: 1.2em 0;
     }
-}  
+}
+
+.responsive {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    
+  }
+
+  .bilder {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    row-gap: 40px;
+    margin-top: 40px;
+}
 }

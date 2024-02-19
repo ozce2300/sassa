@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"iqNlW":[function(require,module,exports) {
+})({"5C5N3":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0bcb44a518dbc454";
+module.bundle.HMR_BUNDLE_ID = "12ebe04b1ca36dc7";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -578,29 +578,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"1SICI":[function(require,module,exports) {
-"use strict";
-// Hämta in meny-knapparna
-let openBtn = document.getElementById("open-menu");
-let closeBtn = document.getElementById("close-menu");
-//eventlyssnare
-openBtn.addEventListener("click", toggleMenu);
-closeBtn.addEventListener("click", toggleMenu);
-//Toggla fram navigeringsmenyn
-function toggleMenu() {
-    let navMenuEl = document.getElementById("nav-menu");
-    //hämtar in css för menyn
-    let style = window.getComputedStyle(navMenuEl);
-    //koll om navigering är synlig eller ej, ändrar display block/none
-    if (style.display === "none") navMenuEl.style.display = "block";
-    else navMenuEl.style.display = "none";
-}
-setInterval(tiden, 100);
-function tiden() {
-    let date = new Date();
-    document.getElementById("klockan").innerHTML = date.toLocaleTimeString();
-}
+},{}],"dceZg":[function(require,module,exports) {
 
-},{}]},["iqNlW","1SICI"], "1SICI", "parcelRequire87d9")
+},{}]},["5C5N3","dceZg"], "dceZg", "parcelRequire87d9")
 
-//# sourceMappingURL=index.18dbc454.js.map
+//# sourceMappingURL=sass.1ca36dc7.js.map
