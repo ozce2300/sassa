@@ -10,12 +10,6 @@
 %margin-auto {
     margin: 0 auto;
 }
-  
-
-
-h1 { color: base.$primary-pink;
-
-}
 
 /* Design av Header */
 header {
@@ -30,7 +24,6 @@ header {
 }
 
 footer {
-
 background-color: base.$primary-pink-third;
 color: base.$primary-white;
 text-align: center;
@@ -152,7 +145,6 @@ main {
     width: 80%;
     @extend %margin-auto;
     font-size: 1.2em;
-    background-color: white;
 }
 
 h2 {
@@ -233,3 +225,17 @@ main p {
     margin-top: 40px;
 }
 }
+
+@media (prefers-color-scheme: dark) {
+    body,header, footer, nav, .menu-btn  {
+        color: white;
+        background-color: grey;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        footer, .menu-btn:hover, nav li:hover  {
+            color: white;
+            background-color: darkgrey;
+            }
+        }

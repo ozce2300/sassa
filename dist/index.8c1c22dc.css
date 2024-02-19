@@ -184,6 +184,10 @@ template, [hidden] {
   display: none;
 }
 
+footer, nav ul, main {
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -193,10 +197,6 @@ template, [hidden] {
 
 main, nav ul, footer {
   margin: 0 auto;
-}
-
-h1 {
-  color: pink;
 }
 
 header {
@@ -322,7 +322,6 @@ nav li:hover {
 }
 
 main {
-  background-color: #fff;
   width: 80%;
   max-width: 600px;
   font-size: 1.2em;
@@ -397,6 +396,18 @@ main p {
     row-gap: 40px;
     margin-top: 40px;
     display: flex;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body, header, footer, nav, .menu-btn {
+    color: #fff;
+    background-color: gray;
+  }
+
+  footer, .menu-btn:hover, nav li:hover {
+    color: #fff;
+    background-color: #a9a9a9;
   }
 }
 
