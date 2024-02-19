@@ -188,6 +188,10 @@ footer, nav ul, main {
   margin: 0 auto;
 }
 
+.responsive {
+  border-radius: 50%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

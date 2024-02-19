@@ -17,3 +17,9 @@ $primary-font: helvetica, sans-serif, arial;
     margin: 0 auto;
 }
   
+$has-border-radius: true;
+.responsive {
+  @if $has-border-radius {
+    border-radius: 50%; 
+  }
+}
