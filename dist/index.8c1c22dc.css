@@ -184,10 +184,6 @@ template, [hidden] {
   display: none;
 }
 
-footer, nav ul, main {
-  margin: 0 auto;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
